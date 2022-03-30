@@ -11,6 +11,8 @@
   }
 */
 
+// for ($i = 0; $i < 10; $i++) echo 'number: ' . $i . '<br>';
+
 
 /* ------------ While Loop ------------ */
 
@@ -20,6 +22,12 @@
   // code to be executed
   }
 */
+
+$i = 0;
+while ($i < 10) {
+  // echo 'number: ' . $i . '<br>';
+  $i++;
+}
 
 
 /* ---------- Do While Loop --------- */
@@ -33,6 +41,12 @@
 do...while loop will always execute the block of code once, even if the condition is false.
 */
 
+$i = 10;
+do {
+  // echo 'number: ' . $i . '<br>';
+  $i++;
+} while ($i < 10);
+
 
 
 /* ---------- Foreach Loop ---------- */
@@ -43,3 +57,13 @@ do...while loop will always execute the block of code once, even if the conditio
   // code to be executed
   }
 */
+
+$posts = ['first ', 'second ', 'third'];
+
+// for ($x = 0; $x < count($posts); $x++) {
+//   echo $posts[$x];
+// }
+
+foreach ($posts as $i => $post) {
+  echo "post $i is: $post<br>";
+}
